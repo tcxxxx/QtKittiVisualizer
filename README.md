@@ -8,6 +8,10 @@ The **QtKittiVisualizer** allows viewing the 3D point clouds and bounding boxes 
 
 It includes the *C++* part of the [raw data development kit](http://kitti.is.tue.mpg.de/kitti/devkit_raw_data.zip) provided on the [official KITTI website](http://www.cvlibs.net/datasets/kitti/).
 
+Changes
+----------- 
+The codes of this repo has been modified to visualize the [Kitti odometry dataset](http://www.cvlibs.net/datasets/kitti/eval_odometry.php), they work well. 
+
 License
 -------
 
