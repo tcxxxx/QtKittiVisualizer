@@ -96,6 +96,7 @@ int KittiConfig::getDatasetIndex(int number)
 std::vector<int> KittiConfig::initAvailableDatasets()
 {
     std::vector<int> datasets;
+    datasets.push_back(0);
     datasets.push_back(1);
     datasets.push_back(2);
     datasets.push_back(3);
@@ -117,8 +118,7 @@ std::vector<int> KittiConfig::initAvailableDatasets()
     datasets.push_back(19);
     datasets.push_back(20);
     datasets.push_back(21);
-    datasets.push_back(22);
-    
+
     // datasets.push_back(11);
     // datasets.push_back(13);
     // datasets.push_back(14);
