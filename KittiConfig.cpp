@@ -25,11 +25,20 @@ limitations under the License.
 #include <boost/filesystem/path.hpp>
 #include <boost/format.hpp>
 
-std::string KittiConfig::data_directory = "../KittiData";
-std::string KittiConfig::raw_data_directory = "raw";
-std::string KittiConfig::dataset_folder_template = "%|04|_sync";
-std::string KittiConfig::point_cloud_directory = "velodyne_points/data";
-std::string KittiConfig::point_cloud_file_template = "%|010|.bin";
+// std::string KittiConfig::data_directory = "../KittiData";
+// std::string KittiConfig::raw_data_directory = "raw";
+// std::string KittiConfig::dataset_folder_template = "%|04|_sync";
+// std::string KittiConfig::point_cloud_directory = "velodyne_points/data";
+// std::string KittiConfig::point_cloud_file_template = "%|010|.bin";
+// std::string KittiConfig::tracklets_directory = ".";
+// std::string KittiConfig::tracklets_file_name = "tracklet_labels.xml";
+
+std::string KittiConfig::data_directory = "../../Dataset";
+std::string KittiConfig::raw_data_directory = "sequences";
+std::string KittiConfig::dataset_folder_template = "%|02|";
+std::string KittiConfig::point_cloud_directory = "velodyne";
+std::string KittiConfig::point_cloud_file_template = "%|06|.bin";
+
 std::string KittiConfig::tracklets_directory = ".";
 std::string KittiConfig::tracklets_file_name = "tracklet_labels.xml";
 
@@ -89,21 +98,40 @@ std::vector<int> KittiConfig::initAvailableDatasets()
     std::vector<int> datasets;
     datasets.push_back(1);
     datasets.push_back(2);
+    datasets.push_back(3);
+    datasets.push_back(4);
     datasets.push_back(5);
+    datasets.push_back(6);
+    datasets.push_back(7);
+    datasets.push_back(8);
     datasets.push_back(9);
+    datasets.push_back(10);
     datasets.push_back(11);
+    datasets.push_back(12);
     datasets.push_back(13);
     datasets.push_back(14);
+    datasets.push_back(15);
+    datasets.push_back(16);
     datasets.push_back(17);
     datasets.push_back(18);
-    datasets.push_back(48);
-    datasets.push_back(51);
-    datasets.push_back(56);
-    datasets.push_back(57);
-    datasets.push_back(59);
-    datasets.push_back(60);
-    datasets.push_back(84);
-    datasets.push_back(91);
-    datasets.push_back(93);
+    datasets.push_back(19);
+    datasets.push_back(20);
+    datasets.push_back(21);
+    datasets.push_back(22);
+    
+    // datasets.push_back(11);
+    // datasets.push_back(13);
+    // datasets.push_back(14);
+    // datasets.push_back(17);
+    // datasets.push_back(18);
+    // datasets.push_back(48);
+    // datasets.push_back(51);
+    // datasets.push_back(56);
+    // datasets.push_back(57);
+    // datasets.push_back(59);
+    // datasets.push_back(60);
+    // datasets.push_back(84);
+    // datasets.push_back(91);
+    // datasets.push_back(93);
     return datasets;
 }

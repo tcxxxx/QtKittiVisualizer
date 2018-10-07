@@ -50,6 +50,9 @@ KittiDataset::KittiDataset(int dataset) :
                   << std::endl;
         return;
     }
+
+    initNumberOfFrames();
+
     if (!boost::filesystem::exists(KittiConfig::getTrackletsPath(_dataset)))
     {
         std::cerr << "Error in KittiDataset: No tracklets were found at "
@@ -58,7 +61,6 @@ KittiDataset::KittiDataset(int dataset) :
         return;
     }
 
-    initNumberOfFrames();
     initTracklets();
 }
 
